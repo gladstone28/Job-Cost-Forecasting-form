@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Cost Forecasting Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Job Cost Forecasting Form</h1>
         <p>Complete the form below to submit your job cost forecast. Attach any relevant documents before submitting.</p>
     </header>
     <main>
-        <form action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT" method="POST" enctype="multipart/form-data">
+
+
+        <form action="https://formspree.io/f/mrgnogde" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="jobOrderNumber">Job Order Number:</label>
                 <input type="text" id="jobOrderNumber" name="jobOrderNumber" required>
             </div>
-            
+
             <div class="form-group">
                 <label for="woodCost">Cost for Wood ($):</label>
                 <input type="number" id="woodCost" name="woodCost" step="0.01" required>
@@ -42,7 +46,7 @@
                 <label for="minorMaterials">Cost for Minor Materials (Glue, Nails, Finishes) ($):</label>
                 <input type="number" id="minorMaterials" name="minorMaterials" step="0.01">
             </div>
-            
+
             <!-- New fields for transportation and installation costs -->
             <div class="form-group">
                 <label for="transportationCost">Transportation Cost of Materials ($):</label>
@@ -68,4 +72,5 @@
         </form>
     </main>
 </body>
+
 </html>
