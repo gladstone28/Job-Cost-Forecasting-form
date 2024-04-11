@@ -15,18 +15,8 @@
     </header>
     <main>
 
+
         <form action="https://formspree.io/f/mrgnogde" method="POST" enctype="multipart/form-data">
-            <!-- New fields for completer's name and email -->
-            <div class="form-group">
-                <label for="completerName">Your Name:</label>
-                <input type="text" id="completerName" name="completerName" required>
-            </div>
-
-            <div class="form-group">
-                <label for="completerEmail">Your Email:</label>
-                <input type="email" id="completerEmail" name="completerEmail" required>
-            </div>
-
             <div class="form-group">
                 <label for="jobOrderNumber">Job Order Number and Customer PO Number when received:</label>
                 <input type="text" id="jobOrderNumber" name="jobOrderNumber" required>
@@ -57,6 +47,7 @@
                 <input type="number" id="minorMaterials" name="minorMaterials" step="0.01">
             </div>
 
+            <!-- New fields for transportation and installation costs -->
             <div class="form-group">
                 <label for="transportationCost">Transportation Cost of Materials ($):</label>
                 <input type="number" id="transportationCost" name="transportationCost" step="0.01" required>
